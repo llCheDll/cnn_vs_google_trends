@@ -1,0 +1,5 @@
+Django==2.1.2
+feedparser==5.2.1
+ipdb==0.11
+ipython==7.0.1
+pytrends==4.4.0
