@@ -1,1 +1,0 @@
-LINK = 'http://edition.cnn.com/services/rss/'
