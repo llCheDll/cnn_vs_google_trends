@@ -14,7 +14,8 @@ SECRET_KEY = '%u1&==3^qm32ib+t-$i&duf^g-bhw^99x0(&t51e!=b%(6-h-t'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['workspace-cherniak-d-v.cs50.io']
+# ALLOWED_HOSTS = ['workspace-cherniak-d-v.cs50.io']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -29,6 +30,8 @@ INSTALLED_APPS = [
     
     'core',
     'rss_agregator',
+
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -39,8 +42,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    
-    'core.middleware.RssMiddleware',
 ]
 
 ROOT_URLCONF = 'core.urls'

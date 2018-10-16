@@ -1,5 +1,6 @@
 import feedparser
 
+
 class Links:
     def __init__(self):
         self.link = 'http://edition.cnn.com/services/rss/'
@@ -13,4 +14,3 @@ class Links:
             self.sub_links.append(link['href'])
         
         return self.sub_links
-        
