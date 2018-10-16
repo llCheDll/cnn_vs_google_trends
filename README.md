@@ -1,11 +1,2 @@
-Run in terminal:
-                1)   sudo docker-compose build
-
-                2)   sudo docker-compose run web python src/manage.py makemigrations
-
-                3)   sudo docker-compose run web python src/manage.py migrate
-
-                4)   sudo docker-compose up
-
-Visit link:
-                http://localhost:8000/api/v1/articles/
+1) For starting project with docker use next command: docker-compose up -d --build
+2) To look on latest trend news,visit link: http://localhost:8000/api/v1/articles/
