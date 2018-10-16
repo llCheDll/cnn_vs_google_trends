@@ -16,11 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.urls import path, re_path, include
-from .scheduler import ThreadingFilter
+from .trend_filter import TrendFilter
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     re_path(r'^api/v1/', include(('api.urls', 'api'), namespace='api')),
 ]
 
-thred = ThreadingFilter()
+thred = TrendFilter()

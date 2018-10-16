@@ -9,7 +9,7 @@ from rss_agregator.links import Links
 from rss_agregator.models import Article
 
 
-class ThreadingFilter(object):
+class TrendFilter(object):
     def __init__(self, interval=60):
         self.interval = interval
         self.links = Links().get_links()
